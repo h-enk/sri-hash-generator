@@ -1,0 +1,34 @@
+{
+  "name": "sri-hash-generator",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://laysent.github.io/",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "scripts": {
+    "prestart": "npm run clean",
+    "start": "react-scripts start",
+    "prebuild": "npm run clean",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "clean": "shx rm -rf build"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "crypto-browserify": "^3.12.0",
+    "react": "^17.0",
+    "react-dom": "^17.0",
+    "react-scripts": "4.0"
+  },
+  "devDependencies": {
+    "shx": "^0.3.3"
+  }
+}
