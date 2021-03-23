@@ -122,7 +122,7 @@ class App extends Component {
           </div>
         </main>
         <footer>
-          <span>© 2018 LaySent.</span>
+          <span>© 2018 LaySent. </span>
           <a href="https://github.com/laysent/sri-hash-generator">Github</a>
         </footer>
       </DragNDrop>

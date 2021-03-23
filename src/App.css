@@ -1,3 +1,29 @@
+input[type=text] {
+  width: calc(100% - 20px);
+  margin-bottom: 0.75rem;
+}
+
+label:not([for="input"]) {
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+section {
+  background: var(--background-alt);
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  padding: 1rem;
+  margin: 1rem 0;
+  min-height: 3rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+button:not([type="submit"]) {
+  margin-bottom: 3rem;
+}
+
+/*
 .container {
   background-color: #fff;
   color: #282c34;
@@ -103,3 +129,4 @@
   margin: 10px auto 0;
   justify-content: space-between;
 }
+*/
