@@ -9,8 +9,8 @@ class App extends Component {
     this.state = {
       url: '',
       sha256: false,
-      sha384: true,
-      sha512: false,
+      sha384: false,
+      sha512: true,
       resource: '',
       submitting: false,
     };
