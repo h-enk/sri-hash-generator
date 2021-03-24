@@ -110,7 +110,7 @@ class App extends Component {
           <h1>Subresource Integrity (SRI) Generator</h1>
           <form onSubmit={this.onSubmit}>
             <div className="field-group">
-              <p><label htmlFor="input">Enter url or drop file below</label></p>
+              <p><label htmlFor="input">Enter url or drop file below:</label></p>
               <input id="input" type="text" value={url} onChange={this.onUrlChange} />
             </div>
             <div className="field-group">
