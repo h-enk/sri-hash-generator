@@ -21,9 +21,9 @@ function isStylesheet(url) {
 
 export function getResourceHTML(url, hash) {
   if (isStylesheet(url)) {
-    return `<link href="${url}" rel="stylesheet" integrity="${hash}" crossorigin="anonymous" />`;
+    return `<link href="${url}" rel="stylesheet" integrity="${hash}" crossorigin="anonymous">`;
   } else {
-    return `<script type="text/javascript" src="${url}" integrity="${hash}" crossorigin="anonymous"></script>`;
+    return `<script src="${url}" integrity="${hash}" crossorigin="anonymous"></script>`;
   }
 }
 

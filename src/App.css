@@ -23,6 +23,15 @@ button:not([type="submit"]) {
   margin-bottom: 3rem;
 }
 
+footer {
+  border-top: 0;
+  margin-top: 1rem;
+}
+
+.copying {
+  margin-left: 0.5rem;
+}
+
 /*
 .container {
   background-color: #fff;

@@ -13,6 +13,7 @@ class App extends Component {
       sha512: true,
       resource: '',
       submitting: false,
+      copying: '',
     };
   }
   generate(getHash, filename) {
@@ -49,8 +50,12 @@ class App extends Component {
         .writeText(this.state.resource)
         .then(
           () => {
-            alert('copied to clipboard');
+            // alert('copied to clipboard');
+            this.setState({ copying: 'Copied!' });
             this.setState({ submitting: false });
+            setTimeout(() => {
+              this.setState({ copying: '' });
+            }, 1000);
           },
           () => {
             this.setState({ submitting: false });
@@ -75,6 +80,17 @@ class App extends Component {
   onUrlChange = (e) => {
     this.setState({
       url: e.target.value,
+    });
+  }
+  onReset = () => {
+    this.setState({
+      url: '',
+      sha256: false,
+      sha384: false,
+      sha512: true,
+      resource: '',
+      submitting: false,
+      copying: '',
     });
   }
   onSubmit = (e) => {
@@ -111,6 +127,8 @@ class App extends Component {
             <span>{resource}</span>
           </section>
           <div className="operation">
+            {/* eslint-disable-next-line */}
+            <button type="reset" aria-label="reset form input and output" onClick={this.onReset} disabled={!url, !resource}>Reset</button>
             <button
               aria-label="copy generated HTML with integrity"
               onClick={this.onCopy}
@@ -119,11 +137,12 @@ class App extends Component {
             >
               Copy
             </button>
+            <span className="copying">{this.state.copying}</span>
           </div>
         </main>
         <footer>
-          <span>© 2018 LaySent. </span>
-          <a href="https://github.com/laysent/sri-hash-generator">Github</a>
+          <span>Open-source MIT Licensed. </span>
+          <a href="https://github.com/h-enk/sri-hash-generator">GitHub</a>
         </footer>
       </DragNDrop>
     );
