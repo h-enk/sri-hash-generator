@@ -127,8 +127,7 @@ class App extends Component {
             <span>{resource}</span>
           </section>
           <div className="operation">
-            {/* eslint-disable-next-line */}
-            <button type="reset" aria-label="reset form input and output" onClick={this.onReset} disabled={!url, !resource}>Reset</button>
+            <button type="reset" aria-label="reset form input and output" onClick={this.onReset} disabled={!(url || resource)}>Reset</button>
             <button
               aria-label="copy generated HTML with integrity"
               onClick={this.onCopy}
