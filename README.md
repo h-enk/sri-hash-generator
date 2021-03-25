@@ -48,14 +48,19 @@ Works offline.
 Notice: if online link is provided, fetching resource should not be blocked due to cross-domain,
 otherwise `integrity` hash cannot be generated correctly.
 
-## Background
+## Setup
 
-Modification of  [Subresource Integrity (SRI) Generator](https://github.com/laysent/sri-hash-generator) by [@LaySent](https://github.com/laysent).
+### Base
+
+- [Subresource Integrity (SRI) Generator](https://github.com/laysent/sri-hash-generator) by [@LaySent](https://github.com/laysent).
 
 ### Major changes
 
 - Use one SHA option only — following current practice
 - Default to SHA-512 — following [current browser support](https://w3c.github.io/webappsec-subresource-integrity/#hash-functions)
+- Add Reset button
+- Replace Copied alert with in page message
+- Replace CSS with [Water.css](https://watercss.kognise.dev/)
 
 
 ## Documentation
