@@ -13,7 +13,7 @@
 </h3>
 
 <p align="center">
-  Progressive Web Application (PWA) that will generate <code>integrity</code> based on given resource.
+  Progressive Web Application (PWA) generating a <code>&lt;script&gt;</code> or <code>&lt;link&gt;</code> element with an <code>integrity</code> attribute.
 </p>
 
 <p align="center">
@@ -33,40 +33,33 @@
 
 ![Doks — Modern Documentation Theme](https://raw.githubusercontent.com/h-enk/sri-hash-generator/master/public/sri-hash-generator.png)
 
-
 ## App
 
 - [sri-gen.henkverlinde.com](https://sri-gen.henkverlinde.com/)
 
 ## Usage
 
-Either enter the link of resource or drop a local file to calculate it's hash value that can be used as
-`integrity` attribute.
+1. Enter URL of JS or CSS file — or drop a local file
+2. Select SHA strength
+3. Click Generate
+4. CLick Copy
+5. Paste `<script>` or `<link>` element
 
-Works offline.
+## Documentation
 
-Notice: if online link is provided, fetching resource should not be blocked due to cross-domain,
-otherwise `integrity` hash cannot be generated correctly.
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)
+- [Can I use](https://caniuse.com/subresource-integrity)
 
-## Setup
+## Acknowledgements
 
-### Base
+Based on:
 
-- [Subresource Integrity (SRI) Generator](https://github.com/laysent/sri-hash-generator) by [@LaySent](https://github.com/laysent).
+- [Subresource Integrity (SRI) Generator](https://github.com/laysent/sri-hash-generator) by LaySent
 
-### Major changes
+Major changes:
 
 - Use one SHA option only — following current practice
 - Default to SHA-512 — following [current browser support](https://w3c.github.io/webappsec-subresource-integrity/#hash-functions)
 - Add Reset button
 - Replace Copied alert with in page message
 - Replace CSS with [Water.css](https://watercss.kognise.dev/)
-
-
-## Documentation
-
-Following links might be helpful understanding `SRI`:
-
-- [MDN](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)
-- [Demo Page](https://laysent.github.io/subresource-integrity-demo/index.html)
-- [Can I use](https://caniuse.com/subresource-integrity)
