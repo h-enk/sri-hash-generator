@@ -50,7 +50,6 @@ class App extends Component {
         .writeText(this.state.resource)
         .then(
           () => {
-            // alert('copied to clipboard');
             this.setState({ copying: 'Copied!' });
             this.setState({ submitting: false });
             setTimeout(() => {
