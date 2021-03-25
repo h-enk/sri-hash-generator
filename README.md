@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://getdoks.org/">
-    <img alt="Doks" src="https://sri-gen.henkverlinde.com/sri-hash-generator.svg" width="60">
+  <a href="https://sri-gen.henkverlinde.com/">
+    <img alt="Icon SRI Generator" src="https://sri-gen.henkverlinde.com/sri-hash-generator.svg" width="60">
   </a>
 </p>
 
