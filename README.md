@@ -42,7 +42,7 @@
 1. Enter URL of JS or CSS file — or drop a local file
 2. Select SHA strength
 3. Click Generate
-4. CLick Copy
+4. Click Copy
 5. Paste `<script>` or `<link>` element
 
 ## Documentation
