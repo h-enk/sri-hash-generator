@@ -110,16 +110,16 @@ class App extends Component {
           <h1>Subresource Integrity (SRI) Generator</h1>
           <form onSubmit={this.onSubmit}>
             <div className="field-group">
-              <p><label htmlFor="input">Enter url or drop file below:</label></p>
+              <p><label htmlFor="input">Enter URL of JS or CSS file — or drop a local file.</label></p>
               <input id="input" type="text" value={url} onChange={this.onUrlChange} />
             </div>
             <div className="field-group">
               <input id="sha256" type="radio" name="strenght" value={sha256} checked={sha256} onChange={this.onHashTypeChange} />
-              <label htmlFor="sha256">sha256</label>
+              <label htmlFor="sha256">SHA-256</label>
               <input id="sha384" type="radio" name="strenght" value={sha384} checked={sha384} onChange={this.onHashTypeChange} />
-              <label htmlFor="sha384">sha384</label>
+              <label htmlFor="sha384">SHA-384</label>
               <input id="sha512" type="radio" name="strenght" value={sha512} checked={sha512} onChange={this.onHashTypeChange} />
-              <label htmlFor="sha512">sha512</label>
+              <label htmlFor="sha512">SHA-512</label>
             </div>
             <button type="submit" disabled={!isValid || submitting}>Generate</button>
           </form>
