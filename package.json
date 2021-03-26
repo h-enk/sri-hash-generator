@@ -37,7 +37,7 @@
     "react-scripts": "4.0"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/jest-dom": "^5.11.10",
     "shx": "^0.3.3",
     "standard-version": "^9.1.1"
   }
