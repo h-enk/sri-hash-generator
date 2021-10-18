@@ -39,6 +39,6 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "shx": "^0.3.3",
-    "standard-version": "^9.1.1"
+    "standard-version": "^9.3.2"
   }
 }
