@@ -1,6 +1,6 @@
 {
   "name": "sri-hash-generator",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "private": true,
   "homepage": "https://sri-gen.henkverlinde.com",
   "browserslist": {
@@ -20,25 +20,34 @@
   },
   "scripts": {
     "prestart": "npm run clean",
-    "start": "react-scripts start",
+    "start": "react-app-rewired start",
     "prebuild": "npm run clean",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject",
     "clean": "shx rm -rf build",
     "release": "standard-version",
     "release:dry-run": "standard-version --dry-run"
   },
   "dependencies": {
-    "classnames": "^2.3.1",
-    "crypto-browserify": "^3.12.0",
-    "react": "^17.0",
-    "react-dom": "^17.0",
-    "react-scripts": "4.0"
+    "classnames": "^2.5.1",
+    "react": "^18.2",
+    "react-dom": "^18.2",
+    "react-scripts": "5.0.1"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.15.0",
-    "shx": "^0.3.3",
-    "standard-version": "^9.3.2"
+    "@testing-library/jest-dom": "^6.4.0",
+    "assert": "^2.1.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "process": "^0.11.10",
+    "react-app-rewired": "^2.2.1",
+    "shx": "^0.3.4",
+    "standard-version": "^9.5.0",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.3"
   }
 }
