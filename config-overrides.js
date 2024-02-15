@@ -1,4 +1,8 @@
-// Source: https://www.alchemy.com/blog/how-to-polyfill-node-core-modules-in-webpack-5
+/*
+Source: 
+  - https://www.alchemy.com/blog/how-to-polyfill-node-core-modules-in-webpack-5
+  - https://stackoverflow.com/a/55298684
+*/
 
 const webpack = require('webpack');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
