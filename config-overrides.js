@@ -1,6 +1,8 @@
 // Source: https://www.alchemy.com/blog/how-to-polyfill-node-core-modules-in-webpack-5
 
-const webpack = require('webpack'); 
+const webpack = require('webpack');
+const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
+
 module.exports = function override(config) { 
     const fallback = config.resolve.fallback || {}; 
     Object.assign(fallback, { 
@@ -12,7 +14,8 @@ module.exports = function override(config) {
       "os": require.resolve("os-browserify"), 
       "url": require.resolve("url") 
       }) 
-   config.resolve.fallback = fallback; 
+   config.resolve.fallback = fallback;
+   config.resolve.plugins = config.resolve.plugins.filter(plugin => !(plugin instanceof ModuleScopePlugin));
    config.plugins = (config.plugins || []).concat([ 
      new webpack.ProvidePlugin({ 
       process: 'process/browser', 
